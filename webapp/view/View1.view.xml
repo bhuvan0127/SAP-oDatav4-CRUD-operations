@@ -1,0 +1,38 @@
+<mvc:View controllerName="studentsodatav4.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Table id="tab1"
+        alternateRowColors="false"
+        items="{/Students}">
+        <columns>
+        <Column>
+        <Text text="ID"></Text>
+        </Column>
+        <Column>
+        <Text text="BRANCH"></Text>
+        </Column>
+        <Column>
+        <Text text="NAME"></Text>
+        </Column>
+        <Column>
+        <Text text="PLACE"></Text>
+        </Column>
+        <Column>
+        <Text text="SCHOOL"></Text>
+        </Column>
+        </columns>
+        <items>
+        <ColumnListItem >
+        <cells>
+        <Text text="{ID}"></Text>
+        <Text text="{branch}"></Text>
+        <Text text="{name}"></Text>
+        <Text text="{place}"></Text>
+        <Text text="{school}"></Text>
+        </cells>
+        </ColumnListItem>
+        </items>
+        </Table>
+    </Page>
+</mvc:View>
